@@ -201,6 +201,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .welcome-dialog-image { background-image: url("resource:///org/gnome/shell/theme/gnome-shell-start.svg"); background-size: contain; /* Reasonable maximum dimensions */ height: 300px; width: 300px; }
 
+.access-dialog { text-align: center; }
+
 .popup-menu-boxpointer, .candidate-popup-boxpointer { -arrow-rise: 0px; }
 
 .popup-menu { min-width: 15em; color: #D3DAE3; }
@@ -275,7 +277,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .rename-folder-popup .rename-folder-popup-item:ltr, .rename-folder-popup .rename-folder-popup-item:rtl { padding: 0, 12px; }
 
-.osd-window { text-align: center; font-weight: bold; margin: 4em; color: white; }
+.osd-window { padding: 10px; text-align: center; font-weight: bold; margin: 4em; color: white; }
 
 .osd-window, .osd-window > * { spacing: 1em; }
 
@@ -325,7 +327,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .cycler-highlight { border: 5px solid #566282; }
 
-.workspace-switcher { margin: 4em; spacing: 8px; }
+.workspace-switcher { padding: 10px; margin: 4em; spacing: 8px; }
 
 .ws-switcher-indicator { background-color: white; padding: 2.6666666667px; margin: 13.3333333333px; border-radius: 32px; }
 
@@ -662,11 +664,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .nm-dialog-header-hbox { spacing: 10px; }
 
-.nm-dialog-scroll-view { border: 1px solid #2b2e39; padding: 5px; border-radius: 2px; background-color: #404552; }
+.nm-dialog-scroll-view { border: 1px solid #2b2e39; padding: 0; border-radius: 2px; background-color: #404552; }
 
 .nm-dialog-item { font-size: 11pt; border-bottom: 0px solid; padding: 12px; spacing: 0px; }
 
-.nm-dialog-item:selected { background-color: #566282; color: #ffffff; }
+.nm-dialog-item:selected { background-color: #566282; border-radius: 0; color: #ffffff; }
 
 .nm-dialog-item:hover { background-color: rgba(255, 255, 255, 0.03); }
 
@@ -874,7 +876,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .notification-banner .notification-actions, .notification-banner:hover .notification-actions, .notification-banner:focus .notification-actions { background-color: transparent; border: 0; padding: 2px 2px 0 2px; spacing: 3px; }
 
-.notification-banner .notification-button, .notification-banner:hover .notification-button, .notification-banner:focus .notification-button { marging: 0; padding: 4px 4px 5px; min-height: 0; font-weight: normal !important; }
+.notification-banner .notification-button, .notification-banner:hover .notification-button, .notification-banner:focus .notification-button { marging: 0; padding: 4px 4px 5px; min-height: 0; border-radius: 2px !important; font-weight: normal !important; }
 
 .notification-banner .notification-button:first-child, .notification-banner .notification-button:last-child, .notification-banner:hover .notification-button:first-child, .notification-banner:hover .notification-button:last-child, .notification-banner:focus .notification-button:first-child, .notification-banner:focus .notification-button:last-child { border-radius: 2px; }
 
@@ -1130,7 +1132,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .unlock-dialog-notifications-container .notification StIcon, .unlock-dialog-notifications-container .unlock-dialog-notification-source StIcon { -st-icon-style: symbolic; }
 
-.unlock-dialog-notification-label { padding: 0px 0px 0px 12px; }
+.unlock-dialog-notification-label { padding-left: 12px; padding-right: 0; }
+
+.unlock-dialog-notification-label:rtl { padding-right: 12px; padding-left: 0; }
 
 .unlock-dialog-notification-count-text { font-weight: bold; padding: 0 6px; color: #D3DAE3; border: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(255, 255, 255, 0.2); border-radius: 99px; margin-right: 12px; }
 
